@@ -1,0 +1,56 @@
+.modal {
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  background: rgba(41, 40, 40, 0.514);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: fixed;
+}
+.modal__image > img {
+  margin-top: 30px;
+}
+.modal__container {
+  background-color: white;
+  width: 400px;
+  padding: 0px 15px;
+  box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.23);
+  border-radius: 10px;
+}
+.modal__formgroup {
+  margin: 10px 0px;
+  text-align: center;
+  overflow: hidden;
+}
+.modal__formgroup > input {
+  outline: none;
+  width: 80%;
+
+  padding: 10px 12px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+.modal__formgroup > button {
+  padding: 12px 12px;
+  text-align: center;
+  outline: none;
+
+  background-color: #f83a68;
+  border: none;
+  color: white;
+  transition: all 250ms;
+}
+.modal__formgroup > button:hover {
+  transform: scale(1.08);
+  padding: 12px 12px;
+  cursor: pointer;
+}
+.text {
+  width: fit-content;
+}
+.text:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

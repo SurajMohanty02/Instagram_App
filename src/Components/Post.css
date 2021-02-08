@@ -1,0 +1,120 @@
+.profile {
+  display: flex;
+  align-items: center;
+}
+.profile > img {
+  object-fit: cover;
+}
+.profile > span {
+  margin-left: 10px;
+}
+.nametime {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 10px;
+}
+.post {
+  width: 73.4%;
+  background-color: rgb(245, 243, 243);
+  border: 1px solid lightgray;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.post__first {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 10px;
+  padding-bottom: 4px;
+}
+.post__image > img {
+  height: auto;
+  width: 43.6vw;
+  margin-top: 10px;
+  object-fit: fill;
+  margin-bottom: 10px;
+}
+.post__inputcoment {
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+.post__inputcoment > input {
+  flex: 0.9;
+  border: none;
+  outline: none;
+  padding: 10px 12px;
+  border-radius: 10px;
+  overflow-wrap: break-word;
+  background-color: lightgray;
+}
+.post__inputcoment > h2 {
+  font-size: 17px;
+  margin-left: 5px;
+  color: rgb(121, 121, 228);
+  cursor: pointer;
+  transition: all 250ms;
+}
+.post__inputcoment > h2:hover {
+  transform: scale(1.08);
+}
+.comment {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.text > span {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  overflow-wrap: break-word;
+  max-width: 100px;
+}
+.text {
+  margin-bottom: 10px;
+}
+.post__container {
+  margin-bottom: 10px;
+}
+.comment > .name {
+  font-size: 15px;
+  margin-right: 10px;
+  font-weight: 600;
+}
+.comment > .name:hover {
+  text-decoration: underline;
+}
+.comment {
+  display: flex;
+  font-size: 14px;
+  align-items: center;
+}
+#avtar {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.comment > .cmt {
+  margin-right: 5px;
+  max-width: 450px;
+}
+.comment {
+  overflow-wrap: break-word;
+}
+@media (max-width: 500px) {
+  .post {
+    width: 95%;
+  }
+  .post__image > img {
+    width: 100%;
+  }
+}
+.show {
+  overflow-y: scroll;
+  max-height: 100px;
+  border-top: 1px solid lightgray;
+  cursor: pointer;
+}
